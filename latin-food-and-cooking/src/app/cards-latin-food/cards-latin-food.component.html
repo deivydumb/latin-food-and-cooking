@@ -1,0 +1,11 @@
+<div class ="row justify-content-around mb-3 p-5" >
+    <h2 class="text text-center mb-3" >Lista de Algunos platos Reconocidos </h2>
+<div class="card text-center mb-3 p-2" style="width: 18rem;"  *ngFor = "let item of platos">
+    <img src="{{item.imagen}}" class="card-img-top" alt="20" width="20">
+    <div class="card-body">
+      <h5 class="card-title">{{item.nombre}}</h5>
+      <p class="card-text">{{item.descripcion}}</p>
+      <a [routerLink]="['/detalles-latin-food',item.id]" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
