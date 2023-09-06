@@ -3,12 +3,9 @@ Proyecto final en el cual se intenta hacer un homenaje a la comida latina por me
 
 para lanzar el proyecto 
 ```
-````
 npm install
-```
 ````
+
 ```
-````
 npm install bootstrap
-```
 ````
