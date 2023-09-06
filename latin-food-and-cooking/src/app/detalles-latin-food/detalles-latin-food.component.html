@@ -1,6 +1,26 @@
-<div class="container">
+<div class="row justify-content-center text-center align-items-center">
+  <div class="col-auto text-center">
 <div *ngIf="plato">
-    <h1>{{plato.id}}</h1>
-    
+  <h2 class="card-title mb-2 p-3 ">{{plato.nombre}}</h2>
+  <div class="card" style="width: 50rem;">
+    <img src="{{plato.imagen}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">{{plato.descripcion}}</p>
+        </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Ingredientes Utilizados:</li>
+      <li class="list-group-item" *ngFor="let ingrediente of plato.ingredientes">{{ingrediente}}</li>
+    </ul>
+    <div class="card-body">
+      <h4 class="card-title">País de Origen: </h4>
+      <p>{{plato.pais}}</p>
+    </div>
+  </div>
+
+</div>
+    <div class="container p-2 mb-2">
+      <a [routerLink]="['/cards-latin-food']" class="btn btn-dark btn-lg">Retornar a la lista de platos</a>
+    </div>
+<br>
 </div>
 </div>

@@ -10,6 +10,7 @@ import { FooterLatinFoodComponent } from './footer-latin-food/footer-latin-food.
 import { ModalLatinFoodComponent } from './modal-latin-food/modal-latin-food.component';
 import { DetallesLatinFoodComponent } from './detalles-latin-food/detalles-latin-food.component';
 import { PrincipalComponent } from './principal/principal.component';
+import { AgregarComponent } from './agregar/agregar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PrincipalComponent } from './principal/principal.component';
     FooterLatinFoodComponent,
     ModalLatinFoodComponent,
     DetallesLatinFoodComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    AgregarComponent
   ],
   imports: [
     BrowserModule,

@@ -9,16 +9,17 @@ import { Plato } from '../Plato';
 export class CardsLatinFoodComponent implements OnInit{
   @ViewChild('myModal') myModal!: ElementRef;
   modal = false;
-  platos: any; // Asegúrese de que Platos esté declarado y tenga el tipo adecuado
+  platos: any;
 
   constructor(private renderer: Renderer2) {}
 
   ngOnInit() {
-    this.platos = Platos; // Asegúrate de que Platos esté definido en tu componente o importado adecuadamente
+    this.platos = Platos;
     console.log(this.platos);
-  
+
+
   }
 }
-  
-  
-  
+
+
+

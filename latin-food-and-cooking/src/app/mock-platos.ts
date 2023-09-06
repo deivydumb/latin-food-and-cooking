@@ -274,7 +274,18 @@ export const Platos:Plato[]=[
           "Carne, chiles, frijoles o dulce",
           "Hojas de maíz"
         ]
-      }
-  
+      },{
+    "id": 21,
+    "nombre": "Tamal2",
+    "descripcion": "Masa de maíz rellena de carne, chiles, frijoles o dulce, envuelta en hojas de maíz.",
+    "pais": "Varios países",
+    "imagen": "https://boquisabroso.com.co/wp-content/uploads/2023/02/Receta-de-Tamales-Vallunos.jpg",
+    "ingredientes": [
+      "Masa de maíz",
+      "Carne, chiles, frijoles o dulce",
+      "Hojas de maíz"
+    ]
+  }
+
 
 ]

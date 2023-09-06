@@ -1,5 +1,26 @@
-<div>
-    <app-carousel-latin-food *ngIf="mostrarCarousel"></app-carousel-latin-food>
-  <app-cards-latin-food *ngIf="mostrarCards"></app-cards-latin-food>
-  <app-detalles-latin-food *ngIf="mostrarDetalles"></app-detalles-latin-food>
+<div class="container align-items-center">
+  <div class="col-auto text-center">
+  <h2 class="text-center">
+    La comida y su importancia
+  </h2>
+  <div class="border bg-light p-2">
+  <p>La comida latina es una de las más ricas y diversas del mundo.
+    Es una fusión de sabores y tradiciones de las culturas indígenas, europeas y africanas que se han desarrollado en las Américas.
+  </p>
+  <p>
+    La importancia de la comida latina radica en su papel como expresión de la identidad cultural. La comida latina es más que una
+    simple fuente de alimento, es un símbolo de la cultura y la historia de los pueblos latinos.
+  </p>
+  <p>
+    La comida latina es también una importante fuente de nutrición. Los platos latinos suelen ser ricos en frutas, verduras y cereales integrales,
+    lo que los hace una opción saludable.
+  </p>
   </div>
+  <div class="container justify-content-center p-3 mb-3">
+    <button class="btn btn-danger" (click)="llamarImagen()"> Quieres conocer un nuevo plato? </button>
+    <a [routerLink]="['/detalles-latin-food',id]" class="btn btn-primary mx-2">Quieres saber mas ? </a>
+  </div>
+  <img class=" p-2- mb-3 border bg-black" height="380" width="630"  src="{{imagen}}">
+  </div>
+</div>
+<br>
